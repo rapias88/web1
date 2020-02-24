@@ -1,0 +1,29 @@
+<!--
+    <input> 태그의 속성들
+1. autocomplete="on/off" : 사용자가 한 번 입력했던 정보를 기억한 뒤, 자동완성 시켜주는 기능
+　 만일 모든 <input>태그들에 동일하게 적용하려면 상위 태그인 <form>태그에 on으로 적용후
+　 필요할 경우 특정 <input>태그에만 off로 설정
+
+2. placehorder="내용" : 입력창에 디폴트값으로 내용을 표시, 사용자가 직접 입력시 해당 내용은 사라짐.
+
+3. autofocus : 특정 <input>태그에 입력해두면 사용자가 페이지에 접속시 해당 태그를 오토포커스 해줌
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <!--자동완성기능 on, 비밀번호 인풋태그만 비활성화-->
+        <form action="" autocomplete="on">
+           id: <input type="text" name="id" placeholder="id를입력해주세요" autofocus>
+            password: <input type="password" name="password" autocomplete="off" placeholder="비밀번호를 입력해주세요">
+            <input type="submit">
+        </form>
+    </body>
+</html>
